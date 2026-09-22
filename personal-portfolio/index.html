@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preksha Jain | Personal Portfolio</title>
+  <meta name="description" content="Personal portfolio of Preksha Jain — exploring ideas, experiences, achievements, hobbies, and interests." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Fonts: Fraunces (display) + Nunito (body). Remove these two lines to go fully offline (system fonts are the fallback). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container" aria-label="Primary">
+      <a class="navbar__brand" href="#home">
+        <span class="navbar__dot" aria-hidden="true"></span>
+        Preksha<span class="navbar__brand-accent">.</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" type="button"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar__bar"></span>
+        <span class="navbar__bar"></span>
+        <span class="navbar__bar"></span>
+      </button>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li><a class="navbar__link" href="#home">Home</a></li>
+        <li><a class="navbar__link" href="#about">About Me</a></li>
+        <li><a class="navbar__link" href="#startups">Startup Ideas</a></li>
+        <li><a class="navbar__link" href="#work">Work Experience</a></li>
+        <li><a class="navbar__link" href="#achievements">Achievements &amp; Hobbies</a></li>
+        <li><a class="navbar__link navbar__link--cta" href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <!--
+        Interactive wave. The SVG lines are generated + animated by js/script.js
+        (module 7). Colour/stroke/density are tunable via CSS variables on .hero-wave.
+      -->
+      <div class="hero-wave" id="heroWave" aria-hidden="true">
+        <svg class="hero-wave__svg" id="heroWaveSvg" preserveAspectRatio="none"></svg>
+      </div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Hello, I’m</p>
+        <h1 class="hero__title" id="hero-title">Preksha <span class="hero__title-accent">Jain</span></h1>
+        <p class="hero__tagline">Curious mind. Idea collector. Memory keeper.</p>
+        <p class="hero__intro">
+          <!-- [ADD SHORT INTRODUCTION] -->
+          Welcome to my little corner of the internet — a place for the things I’ve explored,
+          the ideas I’m curious about, and a few stories along the way.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#about">Get to know me</a>
+          <a class="btn btn--ghost" href="#contact">Say hello</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Scroll down to About Me">
+        <span class="hero__scroll-mouse" aria-hidden="true"><span></span></span>
+        <span class="hero__scroll-text">scroll</span>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section section--about" id="about" aria-labelledby="about-title">
+      <!-- Background: assets/images/about-bg.jpg (CSS pattern fallback underneath) -->
+      <div class="section__bg" data-parallax="0.18" aria-hidden="true"></div>
+
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title" id="about-title">About Me</h2>
+        </header>
+
+        <div class="about__grid">
+          <!-- Replace assets/images/profile.jpg with your photo -->
+          <figure class="card about__photo reveal">
+            <img src="assets/images/profile.jpg" alt="Portrait of Preksha Jain" loading="lazy" />
+            <figcaption class="about__photo-tag">[ADD PROFILE PHOTO]</figcaption>
+          </figure>
+
+          <div class="card about__details reveal reveal--delay-1">
+            <!-- About paragraph. Edit freely; keep it personal rather than resume-like. -->
+            <p class="about__para">
+              Hi, I’m <strong>Preksha Jain</strong>. I grew up in <strong>Bhopal, Madhya Pradesh</strong>,
+              where my school years at <strong>St. Mary’s</strong> gave me an early love for asking questions
+              and then talking about the answers with anyone who would listen. That curiosity carried me to
+              <strong>IIT Bombay</strong>, from where I graduated and where I learned as much from late-night
+              conversations as from the classrooms.
+            </p>
+            <p class="about__para">
+              Outside of all that, I’m passionate about <strong>vlogging</strong> — though not in the usual
+              sense. I rarely post anything publicly; for me the camera is a way of holding on to moments,
+              places and people I don’t want to forget. It’s a personal archive more than a channel.
+            </p>
+            <p class="about__para">
+              If there’s one thing that ties it all together, it’s that I genuinely love talking and
+              sharing what I know. Whether it’s a half-formed idea or something I just figured out, I’m
+              happiest when I get to explain it to someone and see it click.
+            </p>
+          </div>
+
+          <aside class="card about__funfact reveal reveal--delay-2" aria-labelledby="funfact-title">
+            <div class="about__funfact-badge" aria-hidden="true">✨</div>
+            <h3 class="about__funfact-title" id="funfact-title">Fun Fact</h3>
+            <blockquote class="about__funfact-quote">
+              At times when I am alone I talk in gibberish, which makes people confused about what language I am talking in 😂
+            </blockquote>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STARTUP IDEAS ================= -->
+    <section class="section section--startups" id="startups" aria-labelledby="startups-title">
+      <!-- Background: assets/images/startup-bg.jpg -->
+      <div class="section__bg" data-parallax="0.18" aria-hidden="true"></div>
+
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title" id="startups-title">Startup Ideas</h2>
+        </header>
+
+        <!-- A. Explored ideas (expandable) -->
+        <div class="startups__group reveal">
+          <h3 class="startups__subtitle">
+            <span class="startups__subtitle-icon" aria-hidden="true">🔍</span> Explored Ideas
+          </h3>
+          <p class="startups__hint">Click a card to read more.</p>
+
+          <div class="startups__grid startups__grid--explored" id="exploredGrid">
+            <!-- To edit: change the name and the description text below -->
+            <article class="card idea-card idea-card--expandable" data-expandable tabindex="0"
+                     aria-expanded="false" aria-label="Rareloop — open details">
+              <div class="idea-card__emoji" aria-hidden="true">🌀</div>
+              <h4 class="idea-card__title">Rareloop</h4>
+              <p class="idea-card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="idea-card__more">
+                <!-- [ADD DESCRIPTION] — extra detail shown only when expanded -->
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+              </p>
+              <span class="idea-card__tag">[ADD DESCRIPTION]</span>
+              <button class="idea-card__close" type="button" aria-label="Close">×</button>
+            </article>
+
+            <article class="card idea-card idea-card--expandable" data-expandable tabindex="0"
+                     aria-expanded="false" aria-label="Microvest — open details">
+              <div class="idea-card__emoji" aria-hidden="true">🌱</div>
+              <h4 class="idea-card__title">Microvest</h4>
+              <p class="idea-card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="idea-card__more">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+              </p>
+              <span class="idea-card__tag">[ADD DESCRIPTION]</span>
+              <button class="idea-card__close" type="button" aria-label="Close">×</button>
+            </article>
+
+            <article class="card idea-card idea-card--expandable" data-expandable tabindex="0"
+                     aria-expanded="false" aria-label="PSIE — open details">
+              <div class="idea-card__emoji" aria-hidden="true">🧩</div>
+              <h4 class="idea-card__title">PSIE</h4>
+              <p class="idea-card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="idea-card__more">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+              </p>
+              <span class="idea-card__tag">[ADD DESCRIPTION]</span>
+              <button class="idea-card__close" type="button" aria-label="Close">×</button>
+            </article>
+          </div>
+        </div>
+
+        <!-- B. Curious about (simple hover) -->
+        <div class="startups__group reveal reveal--delay-1">
+          <h3 class="startups__subtitle">
+            <span class="startups__subtitle-icon" aria-hidden="true">💭</span> Curious About
+          </h3>
+
+          <div class="startups__grid startups__grid--curious">
+            <article class="card idea-card idea-card--simple">
+              <div class="idea-card__emoji" aria-hidden="true">🛸</div>
+              <h4 class="idea-card__title">DroneX</h4>
+              <p class="idea-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </article>
+            <article class="card idea-card idea-card--simple">
+              <div class="idea-card__emoji" aria-hidden="true">🤝</div>
+              <h4 class="idea-card__title">Surrogate</h4>
+              <p class="idea-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </article>
+            <article class="card idea-card idea-card--simple">
+              <div class="idea-card__emoji" aria-hidden="true">⚡</div>
+              <h4 class="idea-card__title">Piezo Tiles</h4>
+              <p class="idea-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </article>
+            <article class="card idea-card idea-card--simple">
+              <div class="idea-card__emoji" aria-hidden="true">🚶‍♀️</div>
+              <h4 class="idea-card__title">Walk and Earn</h4>
+              <p class="idea-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </article>
+            <article class="card idea-card idea-card--simple">
+              <div class="idea-card__emoji" aria-hidden="true">🚗</div>
+              <h4 class="idea-card__title">Flying Car</h4>
+              <p class="idea-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dim overlay for expanded cards -->
+      <div class="overlay" id="overlay" hidden></div>
+    </section>
+
+    <!-- ================= WORK EXPERIENCE ================= -->
+    <section class="section section--work" id="work" aria-labelledby="work-title">
+      <!-- Background: assets/images/work-bg.jpg -->
+      <div class="section__bg" data-parallax="0.18" aria-hidden="true"></div>
+
+      <div class="container container--narrow">
+        <header class="section__header reveal">
+          <h2 class="section__title" id="work-title">Work Experience</h2>
+        </header>
+
+        <ol class="work__list">
+          <!-- To edit each entry: change the company name, the [ADD DURATION] text, and the bullet points -->
+          <li class="card work-card reveal">
+            <div class="work-card__head">
+              <h3 class="work-card__company">Axxela</h3>
+              <span class="work-card__duration">Duration <small>[ADD DURATION]</small></span>
+            </div>
+            <ul class="work-card__points">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
+            </ul>
+          </li>
+
+          <li class="card work-card reveal reveal--delay-1">
+            <div class="work-card__head">
+              <h3 class="work-card__company">PSU Thailand ?</h3>
+              <span class="work-card__duration">Duration <small>[ADD DURATION]</small></span>
+            </div>
+            <ul class="work-card__points">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
+            </ul>
+          </li>
+
+          <li class="card work-card reveal reveal--delay-2">
+            <div class="work-card__head">
+              <h3 class="work-card__company">SEWA Bank</h3>
+              <span class="work-card__duration">Duration <small>[ADD DURATION]</small></span>
+            </div>
+            <ul class="work-card__points">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
+            </ul>
+          </li>
+
+          <li class="card work-card reveal">
+            <div class="work-card__head">
+              <h3 class="work-card__company">Truebil</h3>
+              <span class="work-card__duration">Duration <small>[ADD DURATION]</small></span>
+            </div>
+            <ul class="work-card__points">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
+            </ul>
+          </li>
+
+          <li class="card work-card reveal reveal--delay-1">
+            <div class="work-card__head">
+              <h3 class="work-card__company">Boond</h3>
+              <span class="work-card__duration">Duration <small>[ADD DURATION]</small></span>
+            </div>
+            <ul class="work-card__points">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS & HOBBIES ================= -->
+    <section class="section section--achievements" id="achievements" aria-labelledby="achievements-title">
+      <!-- Background: assets/images/achievements-bg.jpg -->
+      <div class="section__bg" data-parallax="0.18" aria-hidden="true"></div>
+
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title" id="achievements-title">Achievements and Hobbies</h2>
+        </header>
+
+        <!-- 7 cards. To edit: change the emoji, title, and the Lorem Ipsum description. -->
+        <div class="ach__grid">
+          <article class="card ach-card reveal">
+            <div class="ach-card__emoji" aria-hidden="true">🎤</div>
+            <h3 class="ach-card__title">Singing</h3>
+            <p class="ach-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </article>
+          <article class="card ach-card reveal reveal--delay-1">
+            <div class="ach-card__emoji" aria-hidden="true">✏️</div>
+            <h3 class="ach-card__title">Designing</h3>
+            <p class="ach-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </article>
+          <article class="card ach-card reveal reveal--delay-2">
+            <div class="ach-card__emoji" aria-hidden="true">🎭</div>
+            <h3 class="ach-card__title">Acting (Nukkad Natak)</h3>
+            <p class="ach-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </article>
+          <article class="card ach-card reveal">
+            <div class="ach-card__emoji" aria-hidden="true">🛼</div>
+            <h3 class="ach-card__title">National Level Skating</h3>
+            <p class="ach-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </article>
+          <article class="card ach-card reveal reveal--delay-1">
+            <div class="ach-card__emoji" aria-hidden="true">🥋</div>
+            <h3 class="ach-card__title">National Level Karate</h3>
+            <p class="ach-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </article>
+          <article class="card ach-card reveal reveal--delay-2">
+            <div class="ach-card__emoji" aria-hidden="true">🎶</div>
+            <h3 class="ach-card__title">Diploma in Singing</h3>
+            <p class="ach-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </article>
+          <article class="card ach-card reveal">
+            <div class="ach-card__emoji" aria-hidden="true">📦</div>
+            <h3 class="ach-card__title">Education Kit</h3>
+            <p class="ach-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <!-- Background: assets/images/contact-bg.jpg -->
+      <div class="section__bg" data-parallax="0.18" aria-hidden="true"></div>
+
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title" id="contact-title">Contact Me</h2>
+        </header>
+
+        <!--
+          CONTACT PLACEHOLDERS — replace these:
+            Phone:     href="tel:+91XXXXXXXXXX"  and the visible "+91-XXXXXXXXXX"
+            LinkedIn:  href="#"  -> your LinkedIn URL
+            Gmail:     the "to=email@example.com" part of the Gmail compose URL, and the visible text
+            Instagram: href="#"  -> your Instagram URL
+        -->
+        <div class="contact__grid">
+          <a class="card contact-card reveal" href="tel:+91XXXXXXXXXX" aria-label="Call Preksha: [ADD CONTACT NUMBER]">
+            <span class="contact-card__icon" aria-hidden="true">📞</span>
+            <span class="contact-card__title">Contact Number</span>
+            <span class="contact-card__value">+91-XXXXXXXXXX</span>
+            <span class="contact-card__cta">Call me <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="card contact-card reveal reveal--delay-1" href="#" target="_blank" rel="noopener noreferrer"
+             data-placeholder-link aria-label="LinkedIn profile: [ADD LINKEDIN URL]">
+            <span class="contact-card__icon contact-card__icon--linkedin" aria-hidden="true">in</span>
+            <span class="contact-card__title">LinkedIn</span>
+            <span class="contact-card__value">[LinkedIn Profile]</span>
+            <span class="contact-card__cta">View Profile <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="card contact-card reveal reveal--delay-1" target="_blank" rel="noopener noreferrer"
+             href="https://mail.google.com/mail/?view=cm&fs=1&to=email@example.com&su=Hello%20Preksha"
+             data-mailto="mailto:email@example.com?subject=Hello%20Preksha"
+             aria-label="Email Preksha: [ADD EMAIL]">
+            <span class="contact-card__icon" aria-hidden="true">✉️</span>
+            <span class="contact-card__title">Gmail</span>
+            <span class="contact-card__value">[email@example.com]</span>
+            <span class="contact-card__cta">Write to me <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="card contact-card reveal reveal--delay-2" href="#" target="_blank" rel="noopener noreferrer"
+             data-placeholder-link aria-label="Instagram profile: [ADD INSTAGRAM URL]">
+            <span class="contact-card__icon contact-card__icon--instagram" aria-hidden="true">◎</span>
+            <span class="contact-card__title">Instagram</span>
+            <span class="contact-card__value">[Instagram Profile]</span>
+            <span class="contact-card__cta">View Profile <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Made with <span aria-hidden="true">☕</span><span class="sr-only">coffee</span> and curiosity · Preksha Jain</p>
+      <a class="footer__top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
