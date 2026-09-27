@@ -556,7 +556,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .startups__grid { display: grid; gap: var(--space-5); }
 .startups__grid--explored { grid-template-columns: repeat(3, 1fr); }
-.startups__grid--curious  { grid-template-columns: repeat(5, 1fr); margin-top: var(--space-5); }
+.startups__grid--curious  { grid-template-columns: repeat(3, 1fr); margin-top: var(--space-5); }
 
 .idea-card {
   position: relative;
@@ -681,16 +681,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
    10. ACHIEVEMENTS & HOBBIES
    --------------------------------------------------------- */
 .ach__grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-5);
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5);
 }
 /* 7 cards: 4 + 3, with the last row centred (24 tracks, each card spans 6, row 2 starts at track 4) */
-@supports (grid-template-columns: repeat(24, 1fr)) {
+/* @supports (grid-template-columns: repeat(24, 1fr)) {
   .ach__grid { grid-template-columns: repeat(24, 1fr); }
   .ach-card { grid-column: span 6; }
   .ach-card:nth-child(5) { grid-column: 4 / span 6; }
   .ach-card:nth-child(6) { grid-column: 10 / span 6; }
   .ach-card:nth-child(7) { grid-column: 16 / span 6; }
-}
+} */
 .ach-card {
   padding: var(--space-5);
   transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
